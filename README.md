@@ -1,0 +1,51 @@
+# Poizon Price Bot
+
+Poizon Price Bot — это Telegram-бот для расчёта стоимости товаров с Poizon.  
+Бот помогает быстро перевести цену товара в рубли, учесть доставку и рассчитать наценку для получения прибыли.  
+Проект предназначен для пользователей, которые покупают товары на Poizon и хотят заранее понимать итоговую стоимость заказа.
+
+## Функциональность
+- Ввод цены товара в юанях (CNY)
+- Ввод веса посылки в килограммах
+- Автоматический расчёт стоимости доставки
+- Ввод процента наценки и подсчёт предполагаемой прибыли
+- Сохранение данных для пересчёта с другим процентом
+- Команды: `/rate` — показать текущий курс, `/settings` — изменить ставку доставки
+- Проверка граничных значений (вес > 0, процент >= 0)
+
+## Требования
+- Python 3.10+
+- Библиотеки: aiogram, requests, python-dotenv  
+  Можно установить все зависимости через `requirements.txt`.
+
+## Установка
+```bash
+git clone https://github.com/nlukoshkina-06/poizon-price-bot.git
+cd poizon-price-bot
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+## ЗАПУСК
+git clone https://github.com/nlukoshkina-06/poizon-price-bot.git
+cd poizon-price-bot
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+# Создайте .env на основе .env.example и вставьте свой BOT_TOKEN
+python bot.py
+
+
+## структура проекта 
+
+# poizon-price-bot/
+# - bot.py          основной код Telegram-бота
+- README.md       описание проекта
+- requirements.txt  список зависимостей
+- .gitignore      файлы и папки, которые не добавляются в Git
+- config.env      токены и секреты (не добавлять в Git)
+- utils/          папка для вспомогательных функций
+    - helpers.py  вспомогательные функции для бота
+
+
+#Автор: Лукошкина Надежда

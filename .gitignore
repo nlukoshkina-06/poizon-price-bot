@@ -1,0 +1,27 @@
+# Виртуальное окружение
+venv/
+env/
+*.env
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Данные проекта (не используются)
+# data/raw/
