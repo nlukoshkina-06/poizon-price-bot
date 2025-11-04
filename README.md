@@ -25,18 +25,14 @@ cd poizon-price-bot
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+# Создайте .env на основе .env.example и вставьте свой BOT_TOKEN
 
 ## ЗАПУСК
-git clone https://github.com/nlukoshkina-06/poizon-price-bot.git
-cd poizon-price-bot
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-# Создайте .env на основе .env.example и вставьте свой BOT_TOKEN
 python bot.py
 
 
-## структура проекта 
+## Структура проекта
+
 
 # poizon-price-bot/
 # - bot.py          основной код Telegram-бота
@@ -48,4 +44,4 @@ python bot.py
     - helpers.py  вспомогательные функции для бота
 
 
-#Автор: Лукошкина Надежда
+**Автор:** Лукошкина Надежда
