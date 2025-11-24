@@ -8,7 +8,7 @@ import asyncio
 import requests
 
 # загружаем токен
-load_dotenv("config.env")
+load_dotenv(".env")
 TOKEN = os.getenv("BOT_TOKEN")
 
 # Создаём объекты бота и диспетчера
